@@ -6,7 +6,31 @@
 int main()
 {
     std::cout << "Hello World!\n";
+    int ival = -1;
+    short shval2 = 0;
+    int ival3 = -2;
+    std::cout << "memory location of ival=";
+    std::cout << &ival;
+    std::cout << "memory location of shval2=";
+    std::cout << &shval2;
+
+
+    std::cout << "\n Difference for v1 and v3 is " << (&ival - &ival3);
+
+    int* point = NULL;
+    point = &ival;
+    std::cout << "\n value of point= " << point;
+    std::cout << "\n address of point= " << &point;
+
+    *(point - 4) = 18;
+    std::cout << "\n\n value pointed to by pointer is " << *(point-8);
    
+    *point = 3;
+    std::cout << "\n value of ival1 =" << ival;
+    std::cout << "hi to git";
+    
+
+    std::cout << "\n\n End of program";//last line
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
